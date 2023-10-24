@@ -36,4 +36,13 @@ func main() {
 		}
 	}
 
+	var numb uint8 = 255
+	fmt.Println(numb)
+
+	fmt.Println("modulus of 2", 10%2)
+
+	var right = 10
+	var left = 11
+
+	fmt.Println("rigth is greather than left? ", right > left)
 }
