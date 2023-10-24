@@ -45,4 +45,20 @@ func main() {
 	var left = 11
 
 	fmt.Println("rigth is greather than left? ", right > left)
+
+	var name = "hilda"
+
+	for i := 0; i < len(name); i++ {
+		fmt.Println(string(name[i]))
+	}
+
+	i := 0
+	for i < len(name) {
+		fmt.Println(string(name[i]))
+		i++
+	}
+
+	for i, val := range name {
+		fmt.Println(i, string(val))
+	}
 }
