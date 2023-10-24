@@ -65,10 +65,43 @@ func main() {
 	}
 }
 ```
-### funcition
+### function
+`function` merupakan sekumpulan program yang dibungkus dengan nama dan tujuan tertentu. penerapan `function` dimaksudkan untuk membuat kode lebih mudular dan mengurangi mengulang kode yang sama.
 ```
+package main
+
+import "fmt"
+
+func main() {
+    var a = 10
+    var b = 10
+
+    fmt.Println(sum(a, b))
+}
+
+func sum(a, b int) int {
+    return a + b
+}
 ```
 
 ### scope
+`scope` adalah tempat dimana suatu kode atau variabel dapat digunakan. jadi dalam implementasinya suatu program atau variabel hanya dapat digunakan jika terdapat discope yang sama.
 ```
+package main
+
+import "fmt"
+
+const global = 10
+
+func main() {
+    const local = 12
+
+    fmt.Println(local)
+    printGlobal()
+}
+
+func printGlobal() {
+    fmt.Println(global)
+}
+
 ```
